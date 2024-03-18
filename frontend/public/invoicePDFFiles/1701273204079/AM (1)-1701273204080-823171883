@@ -1,0 +1,252 @@
+Achievements:
+- New app CashAp: 
+  
+  b. login / logout	 	==================>> done
+  c. routes protection	 	==================>> done
+  d. nom de l'initiateur	==================>> done
+  a. User registration process has to be done prior to App Utilization	 	==================>> done
+    Making sure that the registration process is done when user is 
+    connected by only the admin or super admin
+  b. Creation of User roles (backend tables and API Logic)			          ==================>> done
+  c. Applying of User roles on frontEnd 						
+    Preventing normal user from adding user					                    ==================>> done
+    Adapting the decaissement form suitable for an admin                 ==================>> done
+  d. Creating a Database Singleton Class to closed DB connection after		==================>> done
+    API Calls (EM, AM)
+    
+    protecting some part of the UI and routes from illegal and
+     unauthorized access
+    integrating new design from wirefram
+    restructuring decaissement form
+    adding pdf printing and download functionality
+  
+  
+Blockers: 
+	no blockers
+	
+
+Next Steps:
+e. Building Admin Panel (Settings, Statistics, others)          ==================>> ongoing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b. Le user se log-in et remplit la fiche de décaissement	 	==================>> DONE (1h)
+c. Le user se log-in et remplit la fiche de décaissement	 	==================>> DONE (30min)
+   * montant, 
+   * beneficiaire, 
+   * numéro de facture
+
+d. Le User est un employé de EASE qui appartient à un service/département bien précis	 		==================>> DONE 
+   * Ticketing, 
+   * Hébergement, 
+   * Visa 
+   * Finances
+
+e. Après le Log-in la Fiche de Décaissement s'ouvre avec certains champs automatiquement remplis	 		==================>> DONE (2h)
+   * Service
+   * Initiateur (le user qui vient de se log-in)
+   * Chef du Service (L plus 1) auquel apprtient
+    l'initiateur
+   * Responsable Financier (RAF)
+   * Filiale
+
+f. Le User remplit le montant à décaisser en chiffres dans le champ Montant (number text)				==================>> DONE (1h)
+   * validation du montant imputé
+      - Montant >= 1
+      - Montant doit être un entier naturel
+         pour le XAF  
+            (virgules autorisées pr les autres
+            currency like euros, dollars ==> for
+            later)
+      - Montant ne peut pas être missing (NA)
+       
+
+g. Après imputation successfull du montant à déciasser en chifres 							==================>> DONE (2h)
+   * une "translation automatique" est faite pour imputer le champ Montant en Lettres
+
+h. Le User sélectionne ensuite le béneficiaire souhaité (drop down menu + Option d'ajout d'un nouveau béneficiare) 	==================>> ONGOING
+    * relase 0.1: drop down menu including 5 béneficiaires
+      * relase 0.1: "+" Symbole au dessus du symble "ⱽ" du menou
+         droulant contenant les 5 béneficiares du début
+      * relase 0.1: hover sur les symboles "ⱽ" et "+" affichant des
+         tooltips
+      * relase 0.2: "+" --> ouvrant un autre pop up où les
+         béneficiaires sont listés par catégorie alphabétiques, see 
+         https://cran.r-
+	project.org/web/packages/available_packages_by_name.html#available-packages-Q
+      * ...
+      
+      
+i. Le user entre le numéro de facture associé à  l'avis de décaissement (champ optionnel)	==================>> DONE (3h)
+    
+j. Le user sélectionne du calendrier la date de décaissement souhaitée					==================>> DONE
+
+b. Le User clique sur le button "Sauvegarder" pour enregistrer sa demande et start le processus d'approval	==================>> ONGOING (8h)
+   * validation des champs obligatoires
+   * display de pop up messages sur le(s) champ(s) obligatoire(s) non
+    -rempli(s)
+   * Le button sauvegarde n'est activ que lorsque tous les champs
+    obligataires sont remplis
+   * un preview (pdf) de la fiche décaissement est affichée
+   * le user peut annuler pour changer des infos ou pour arrêter le
+     processus // ou pour finaliser le process
+   * Le numéro de déciassement est généré
+   * Un mail est envoyé au Validateur, au DAF, au Chef de Service et à
+     l'initiateur (2 mails différents)
+   * Le mail donne des Infos au validateur sur la date limite pour approval 
+     = f(date souhaitée de décaissement) et un lien pour l'Admin
+     Panel // notification à intervalles réguliers ?
+   * La Validation occurs sur le admin Panel: clik on valider-button +
+     message confirmation de la volonté de Validation)
+
+c. Le validateur autorisé est affiché automatiquement en fonction de la limite de décaissement poissible  	==================>> ONGOING
+   * Validateur Cat1: 0 - 500K; 
+   * Validateur Cat2: 0 - 3.000.000 XAF
+   * Validateur Cat3: 0 - infinie
+
+a. Aprés enregistrement  clique sur sauvegarder, le numéro d'imputation est créé 	==================>> ongoing 
+
+b. Trois statuts possibles de décaissement						==================>> DONE 
+   * approved, 
+   * pending, 
+   * denied
+
+c. Dès que sa demande est approuvée, 2 notifications mails sont envoyées: 			==================>> DONE 
+   * mail to initateur --> ta demande a été approuvée  / ta demande a été
+     refusée
+   * mail to service de déciassement. prière de décaisser le montant x pour
+     le collaborateur y à la date z  ou ne pas le faire
+     
+d. Process validation du process de collecte de l'argent					==================>> TBD 
+   QR-Code ???
+e. Admin Panel:						==================>> DONE (6h)
+   * Une table containant tous les déciassements
+   * sur une ligne ID + ts les champs de la fiche + lien permettant de
+    télechartger le fichier pdf +  status icon + approval/denial button
+f. Beneficiaire = f(Categories de dépenses)					 		==================>> TBD 
+a. Chaque Opration nécessite 2 Validateurs 							==================>> tbd 
+   * standard validation du chef de service même si il n'a plas le droit de valider ce montant
+b. Bypass possible from Super Validateur		==================>> tbd (3h)
+d. Admin Panel --> user doit pouvoir spécifier les validateurs et les montants		==================>> tbd 
+c. user's role au niveau du dashbaord					==================>> tbd 
+   *stanbdard user should see "ses" initiated deciassements 
+   * Chef de service should see only the initiated deciassements of his service
+   * Super Validator should see all initiated decaissements pour lesquels il est
+     autorisé ? (also others but he should not be able to modify them)
+a. Validation du déciassement par le service de décaissement to be done on the dashboard		==================>> tbd 
+   * Le service de déciassement voit les requrest de décaissement approved avec
+     d'actions possible (order to pay; postpone payment (more funds needed),
+     more information needed --> sent email to Super Validator + Initiator)
+   * statut en attende fonds in case more funds needed
+
+
+	
+	
+
+
+
+full name: Ariel Mboma
+email: viallymboma@gmail.com
+departmenent: all
+filiale: all, 
+user_role: SUPER_VALIDATOR
+fonction: all
+isValidator: true
+
+
+full name: Rianone Simo
+email: rianone.simo@kaeyros-analytics.com
+departmenent: ticketing
+filiale: yaounde, 
+user_role: STANDARD_USER
+fonction: agent
+isValidator: false
+
+
+full name: Rodrigue Kengne
+email: rodrigue.kengne@kaeyros-analytics.com
+departmenent: hebergement
+filiale: yaounde, 
+user_role: STANDARD_USER
+fonction: agent
+isValidator: false
+
+
+full name: Ivans Wandji
+email: ivans.wandji@kaeyros-analytics.com
+departmenent: ticketing
+filiale: yaounde, 
+user_role: CHEF_OF_SERVICE
+fonction: Chef de Department
+isValidator: false
+
+
+full name: Ezekiel Dombissi
+email: ezekiel.dombissi@kaeyros-analytics.com
+departmenent: hebergement
+filiale: yaounde, 
+user_role: CHEF_OF_SERVICE
+fonction: Chef de Department
+isValidator: false
+
+
+full name: Dakayi Franck
+email: thierry.monthe@kaeyros-analytics.com
+departmenent: ticketing
+filiale: yaounde, 
+user_role: SUPER_VALIDATOR
+fonction: CFO
+isValidator: true
+
+
+full name: Stephane Kamga
+email: patrice.kwemo@outlook.com
+departmenent: hebergement
+filiale: yaounde, 
+user_role: CHEF_OF_SERVICE
+fonction: Chef de Filiale
+isValidator: true
+
+
+For mysql connections: 
+#  show full processlist;
+#  show global status;
+#  show session status;
+#  SHOW STATUS WHERE `variable_name` = 'Max_used_connections';
+#  SHOW VARIABLES LIKE "max_connections";
+SHOW STATUS LIKE 'max_used_connections';
+
+
+

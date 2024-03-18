@@ -1,0 +1,62 @@
+-----------------------------------------------------------------------------------------------------------------
+
+                        Infrastructure_kaeyros-analatycs
+
+----------------------------------------------------------------------------------------------------------------                        
+
+
+                                     STAGING 
+
+
+1.. Swivy
+
+- Backend:  https://swivy-backend.onrender.com   
+
+  Infrastructure: render
+
+- Frontend: https://swivy-ten.vercel.app/fr
+
+  Infrastructure: vercel
+
+
+2.. payoutly 
+
+- Backend:  https://swivy-backend.onrender.com
+  
+  Infrastructure: render
+
+- Frontend: https://cash-app-dusky.vercel.app/
+  
+  Infrastructure: vercel
+
+
+3.. airo 
+
+- Backend: https://air-o.net/
+ 
+  Infrastructure: aws
+
+- Frontend: https://airtime-sending.vercel.app/
+
+4.. eze 
+
+- Backend: https://back.communities.eze.wiki/
+ 
+  Infrastructure: aws
+
+- Frontend ezecommunities : https://communities.eze.wiki/
+
+- Frontend landing page : https://eze.wiki/
+
+5.. Data catalog shiny app
+
+-  https://swyvi.com/
+
+ Infrastructure: aws
+
+
+6.. landing page app
+
+invy: http://ec2-52-58-7-243.eu-central-1.compute.amazonaws.com:3001/
+
+airo: http://ec2-52-58-7-243.eu-central-1.compute.amazonaws.com:3002/

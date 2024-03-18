@@ -1,0 +1,9 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4V10" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 4V10" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42 17V27.26C40.22 25.84 37.96 25 35.5 25C33.04 25 30.74 25.8599 28.94 27.3199C26.52 29.2199 25 32.2 25 35.5C25 37.46 25.56 39.34 26.52 40.9C27.26 42.12 28.22 43.18 29.36 44H16C9 44 6 40 6 34V17C6 11 9 7 16 7H32C39 7 42 11 42 17Z" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 22H26" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 32H19.24" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 35.5C46 37.46 45.44 39.34 44.48 40.9C43.92 41.86 43.22 42.7 42.4 43.38C40.56 45.02 38.16 46 35.5 46C33.2 46 31.08 45.26 29.36 44C28.22 43.18 27.26 42.12 26.52 40.9C25.56 39.34 25 37.46 25 35.5C25 32.2 26.52 29.2199 28.94 27.3199C30.74 25.8599 33.04 25 35.5 25C37.96 25 40.22 25.84 42 27.26C44.44 29.18 46 32.16 46 35.5Z" stroke="#568BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.5 40.5C35.5 37.74 37.74 35.5 40.5 35.5C37.74 35.5 35.5 33.26 35.5 30.5C35.5 33.26 33.26 35.5 30.5 35.5C33.26 35.5 35.5 37.74 35.5 40.5Z" stroke="#568BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,258 @@
+{
+    "app_title": "Application pour deboursement de fond",
+    "active_locale": "Francais",
+    "button_label": "En savoir plus",
+    "homepage_nav_link_label": "Retour", 
+
+    "Index": {
+      "title":"Ajouter un Décaissements"
+      },
+    "navigation": {
+      "home": {
+        "add": "Ajouter un Décaissements",
+        "disbursment": "Décaissements",
+        "user": "Utilisateurs",
+        "disconnect": "Déconnexion"
+      }
+    },
+    "page": {
+      "login": {
+        "loginPage": "S'identifier",
+        "info": "Veuillez saisir vos informations",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "connect": "Connexion", 
+        "uNameValidationMessage": "Nom d'utilisateur obligatoire!", 
+        "passWordValidationMessage": "Mot de Passe obligatoire!", 
+        "afterLoginSuccessNotification": "Connection éffectuée avec succes"
+      },
+      "home": {
+        "welcome": "Bienvenue",
+        "data": [
+          {
+            "key": 1,
+            "link": "/decaissement", 
+            "img": "../../../../public/new_assets/note-favorite.svg", 
+            "title": "Ajouter un Décaissement", 
+            "paragraph": "Accédez au formulaire de décaissement."
+          }, 
+          {
+            "key": 2,
+            "link": "/dashboard", 
+            "img": "../../../../public/new_assets/note-favorite.svg", 
+            "title": "Tableau de Bord", 
+            "paragraph": "Accédez au tableau de bord pour voir vos activités."
+          }
+        ], 
+        "header": {
+          "addDecaissementBtn": "Ajouter un Décaissement"
+        }
+      },
+      "decaissement": {
+        "form": "Fiche de Décaissement",
+        "initiator": "Demandeur",
+        "reason": "Motif de Décaissement",
+        "invoice": "Numéro de facture", 
+        "attachedFileTitle": "Attacher une Facture", 
+        "innerLabel": "Choisir un fichier",
+        "date": "Date",
+        "validator": "Validateur",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "modify": "Modifier",
+        "loading": "Chargement veuillez attendre",
+        "fincialChief": "Responsable financier", 
+        "subd": {
+          "subsidiary": "Bureaux",
+          "all": "Tous"
+        },
+        "benef": {
+          "beneficary": "Bénéficiaire",
+          "select": "Choisir un bénéficiaire"
+        },
+        "amt": {
+          "amount": "Montant", 
+          "amountPlaceHolder": "Entrer le montant ici", 
+          "amountValidation": "Montant est obligatoire!"
+        },
+        "paymentMode": {
+          "payment": "Mode de paiement",
+          "paymentType": "Choisir un mode de paiement",
+          "payOpt": {
+            "opt1": "Choisir un mode de paiement",
+            "opt2": "Espèces",
+            "opt3": "Mobile Money",
+            "opt4": "Paiement"
+          }
+        },
+        "dep": {
+          "department": "Département",
+          "departmentPH": "Choisissez un Département",
+          "pend": "En attente"
+        },
+        "offr": {
+          "officer": "Validateur financier",
+          "pend": "En attente"
+        },
+        "disbursmentT": {
+          "DT": "Type de Décaissement",
+          "CDT": "Choisir un type de Décaissement",
+          "DisOp": {
+            "opt1": "Choisir un type de Décaissement",
+            "opt2": "Taxi",
+            "opt3": "Visa",
+            "opt4": "Autres"
+          }
+        },
+        "HOD": {
+          "headOD": "Validateur administratif",
+          "pend": "En cour.."
+        }
+      },
+      "dashboard": {
+        "sideBar": {
+          "menu": "MENU",
+          "DSBD": "Tableau de bord",
+          "decaissement": "Décaissements",
+          "trackingD": "Suivi Décaissements", 
+          "configU": "Utilisateurs",
+          "AppS": {
+            "appsettings": {
+              "appS": "Paramètres",
+              "company": "Bureaux",
+              "dept": "Départements",
+              "cat": "Postes",
+              "role": "Rôles",
+              "amount": "Montant",
+              "typeD": "Types de décaissements",
+              "benef": "Bénéficiaires",
+              "statusName": "Nom du Statut", 
+              "payementMode": "Modes de Paiement"
+            }
+          }
+        },
+        "trackingPage": {
+          "trackingPageTitle": "Suivi de Decaissements"
+        },
+        "dashinternal": {
+          "cartStats": {
+              "title1": "Décaissement Yaoundé",
+              "title2": "Décaissement Douala",
+              "title3": "Décaissement Bafoussam",
+              "title4": "Décaissement Buea"
+            },
+          "ApexChart": {
+            "type": "catégorie",
+            "categories": {
+              "Sep": "Sep",
+              "Oct": "Oct",
+              "Nov": "Nov",
+              "Dec": "Dec",
+              "Jan": "Jan",
+              "Feb": "Feb",
+              "Mar": "Mar",
+              "Apr": "Avr",
+              "May": "May",
+              "Jun": "Jun",
+              "Jul": "Jul",
+              "Aug": "Au"
+            },
+            "series": ["Produit Un", "Produit Deux"]
+          },
+          "TDChatOne": {
+              "totDD": "Total Décaissement Douala",
+              "totDY": "Total Décaissement Yaoundé",
+              "day": "Jour",
+              "week": "Semaine",
+              "month": "Mois"
+            },
+            "TDChatTwo": {
+              "categories": ["L", "M", "M", "J", "V", "S", "D"],
+              "thisWeek": "Décaissement cette semaine",
+              "option": ["Cette semaine", "La semaine dernière"]
+            },
+            "TDChatThree": {
+              "option": ["Annuel", "Mensuel"]
+            },
+            "RegLeb": {
+              "RegionLeb": "Étiquettes de région"
+            }
+        },
+        "disbursment": {
+          "superV": "Décaissement",
+          "tot": "Total",
+          "chiefOfSer": "Vous n'êtes pas autorisé à voir ce tableau",
+          "err": "Échec de la validation du décaissement",
+          "success": "Enregistrement effectué avec succès",
+          "COSN": "CHEF DE SERVICE",
+          "reject": "rejeté",
+          "EmailExist": "Cet e-mail existe déjà",
+          "usecreationF": "Échec de la création de l'utilisateur.",
+          "agentFullName": "theAgentFullName",
+          "see": "voir",
+          "download": " Télécharger PDF",
+          "disSearchHolder": "Rechercher par nom...",
+          "makeD": "Faire un décaissement",
+          "linePPage": "Ligne par page :",
+          "prev": "Précédent",
+          "foll": "Suivant",
+          "sel": "sélectionné",
+          "emptyTable": "Aucun décaissement...",
+          "action": "actions",
+          "center": "centre",
+          "start": "début",
+          "status": {
+            "stat": "statut",
+            "statusOption": [
+              { "name": "Valider", "uid": "Valider" },
+              { "name": "Rejeter", "uid": "Rejeter" },
+              { "name": "En attente", "uid": "en attente" }
+            ]
+          },
+          "colum": {
+            "col": "colonnes",
+            "columnsTwo": [
+              { "name": "ID", "uid": "id", "sortable": true },
+              {
+                "name": "No D'IMPUTATION",
+                "uid": "inputationNumber",
+                "sortable": true
+              },
+              {
+                "name": "INITIATEUR",
+                "uid": "theAgentFullName",
+                "sortable": true
+              },
+              { "name": "MONTANT", "uid": "amount", "sortable": true },
+              { "name": "DEVISE", "uid": "currency" },
+              { "name": "DATE", "uid": "date", "sortable": true },
+              {
+                "name": "BENEFICIAIRE",
+                "uid": "theBeneficiary",
+                "sortable": true
+              },
+              { "name": "STATUS", "uid": "status", "sortable": true },
+              {
+                "name": "TYPE DE PAIEMENT",
+                "uid": "paymentType",
+                "sortable": true
+              },
+              { "name": "FILIALE", "uid": "filiale", "sortable": true },
+              { "name": "VAIDATEUR", "uid": "theValidator" },
+              { "name": "CHEF FINACIER", "uid": "theFinancialChief" },
+              { "name": "COMMENTAIRE", "uid": "comment", "sortable": true },
+              {
+                "name": "MONTANT EN LETTRE",
+                "uid": "letter_amount",
+                "sortable": true
+              },
+              { "name": "ACTIONS", "uid": "actions" }
+            ]
+          }
+        },
+        "modal": {
+          "title": "Formulaire de décaissement"
+        }
+      }
+    }
+  }

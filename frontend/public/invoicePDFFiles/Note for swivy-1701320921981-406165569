@@ -1,0 +1,15 @@
+Note for swivy
+
+- Prepare and send notification on incoming car: 
+  Car can send notification when it is getting closer. 
+- Add real-time tracking
+- Add engine quality and meterage (amount of km done)
+  for any given period.
+- Add fuel consumption tracker:
+  feature that allows us to visually calculate the amount of
+  fuel spent for each distance.
+- This can be applied to schools (schools can track their drivers 
+  and where their kids are).
+
+
+

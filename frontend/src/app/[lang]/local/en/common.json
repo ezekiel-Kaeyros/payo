@@ -1,0 +1,238 @@
+{
+    "app_title": "Application for fund disbursment",
+    "active_locale": "English",
+    "button_label": "Read More",
+    "homepage_nav_link_label": "Go Back", 
+
+    "Index": {
+        "title":"Add a disbursment"
+    },
+    "navigation": {
+    "home": {
+        "add": "Add a disbursment",
+        "disbursment": "Disburesments",
+        "user": "Users",
+        "disconnect": "Log Out"
+    }
+    },
+    "page": {
+        "login": {
+            "loginPage": "Log In",
+            "info": "Please Enter your information",
+            "username": "Username",
+            "password": "Password",
+            "connect": "Connection", 
+            "uNameValidationMessage": "Username mandatory!", 
+            "passWordValidationMessage": "Password mandatory!", 
+            "afterLoginSuccessNotification": "You successfully logged In"
+        },
+        "home": {
+            "welcome": "Welcome",
+            "data": [
+                {
+                    "key": 1,
+                    "link": "/decaissement", 
+                    "img": "../../../../public/new_assets/note-favorite.svg", 
+                    "title": "Add a Disbursment",
+                    "paragraph": "Add a request for fund disbursement by cash transfer"
+                },
+                {
+                    "key": 2,
+                    "link": "/dashboard", 
+                    "img": "../../../../public/new_assets/note-favorite.svg", 
+                    "title": "View Activities",
+                    "paragraph": "Access the dashboard to see statistics and predictions"
+                }
+            ], 
+            "header": {
+                "addDecaissementBtn": "Add a Disbursment"
+            }
+        },
+        "decaissement": {
+            "form": "Disburesment Form",
+            "initiator": "Requester",
+            "reason": "Reason for Disbursement",
+            "invoice": "Invoice Number", 
+            "attachedFileTitle": "Attach an Invoice", 
+            "innerLabel": "Choose a File",
+            "date": "Date",
+            "validator": "Validator",
+            "cancel": "Cancel",
+            "save": "Save",
+            "modify": "To Modify",
+            "loading": "Loading Please Wait", 
+            "fincialChief": "Financial Chief", 
+            "subd": {
+            "subsidiary": "Office",
+            "all": "All"
+            },
+            "benef": {
+            "beneficary": "Beneficiary",
+            "select": "Choose a Beneficiary"
+            },
+            "amt": {
+                "amount": "Amount", 
+                "amountPlaceHolder": "Enter the amount here", 
+                "amountValidation": "Amount is Mandatory" 
+            },
+            "paymentMode": {
+            "payment": "Mode of payment",
+            "paymentType": "Choose a Payment Type",
+            "payOpt": {
+                "opt1": "Choose a Payment Type",
+                "opt2": "Species",
+                "opt3": "Mobile Money",
+                "opt4": "payment"
+            }
+            },
+            "dep": {
+            "department": "Department",
+            "departmentPH": "Select a Department",
+            "pend": "Pending"
+            },
+            "offr": {
+            "officer": "Chief Financial Officer",
+            "pend": "Pending"
+            },
+            "disbursmentT": {
+            "DT": "Disbursement Type",
+            "CDT": "Choose a Disburesment Type",
+            "DisOp": {
+                "opt1": "Choose a Disburesment Type",
+                "opt2": "Taxi",
+                "opt3": "Visa",
+                "opt4": "Others"
+            }
+            },
+            "HOD": {
+            "headOD": "Head of Department",
+            "pend": "Pending"
+            }
+        },
+        "dashboard": {
+            "sideBar": {
+                "menu": "MENU",
+                "DSBD": "Dashboard",
+                "decaissement": "Disbursments",
+                "trackingD": "Track Cashouts", 
+                "configU": "Users",
+                "AppS": {
+                    "appsettings": {
+                    "appS": "Settings",
+                    "company": "Office",
+                    "dept": "Departments",
+                    "cat": "Categories",
+                    "role": "Roles",
+                    "amount": "Amounts",
+                    "typeD": "Disburesments Types",
+                    "benef": "Beneficiaries",
+                    "statusName": "Status Names", 
+                    "payementMode": "Payment Modes"
+                    }
+                }
+            },
+            "trackingPage": {
+                "trackingPageTitle": "Tracking Cashouts"
+            },
+            "dashinternal": {
+            "cartStats": {
+                "title1": "Disburesment Yaounde",
+                "title2": "Disburesment Douala",
+                "title3": "Disburesment Bafoussam",
+                "title4": "Disburesment Buea"
+            },
+            "ApexChart": {
+                "type": "category",
+                "categories": {
+                "Sep": "Sep",
+                "Oct": "Oct",
+                "Nov": "Nov",
+                "Dec": "Dec",
+                "Jan": "Jan",
+                "Feb": "Feb",
+                "Mar": "Mar",
+                "Apr": "Apr",
+                "May": "May",
+                "Jun": "Jun",
+                "Jul": "Jul",
+                "Aug": "Aug"
+                },
+                "series": ["Product One", "Product Two"]
+            },
+            "TDChatOne": {
+                "totDD": "Total Disburesment Douala",
+                "totDY": "Total Disburesment Yaounde",
+                "day": "Day",
+                "week": "Week",
+                "month": "Month"
+            },
+            "TDChatTwo": {
+                "categories": ["M", "T", "W", "T", "F", "S", "S"],
+                "thisWeek": "Disbursement this week",
+                "option": ["This Week", "Last Week"]
+            },
+            "TDChatThree": {
+                "option": ["Annual", "Monthly"]
+            },
+            "RegLeb": {
+                "RegionLeb": "Region labels"
+            }
+            },
+            "disbursment": {
+                "superV": "Disburesment",
+                "tot":"Total",
+                "chiefOfSer": "You are not authorized to view this table",
+                "err": "Failed to validate Cashout",
+                "success": "Registration completed successfully",
+                "COSN": "CHEF OF SERVICE",
+                "reject": "rejected",
+                "EmailExist": "This email already exists",
+                "usecreationF": "User creation failed.",
+                "agentFullName": "theAgentFullName",
+                "see": "see",
+                "download": " Download PDF",
+                "disSearchHolder": "Search by name...",
+                "makeD":"Make a Disburesment",
+                "linePPage":"Line per page:",
+                "prev":"Previous",
+                "foll":"Following",
+                "sel":"selected",
+                "emptyTable":"No disbursement...",
+                "action":"actions",
+                "center":"center",
+                "start":"start",
+                "status": {
+                    "stat": "status",
+                    "statusOption": [
+                    { "name": "Validate", "uid": "Validate" },
+                    { "name": "Reject", "uid": "Reject" },
+                    { "name": "Pending", "uid": "pending" }
+                    ]
+                },
+                "colum": {
+                    "col": "columns",
+                    "columnsTwo": [
+                    { "name": "ID", "uid": "id", "sortable": true },
+                    { "name": "IMPUTATION NUMBER", "uid": "inputationNumber", "sortable": true },
+                    { "name": "INITIATOR", "uid": "theAgentFullName", "sortable": true },
+                    { "name": "AMOUNT", "uid": "amount", "sortable": true },
+                    { "name": "CURRENCY", "uid": "currency" },
+                    { "name": "DATE", "uid": "date", "sortable": true },
+                    { "name": "BENEFICIARY", "uid": "theBeneficiary", "sortable": true },
+                    { "name": "STATUS", "uid": "status", "sortable": true },
+                    { "name": "PAYMENT TYPE", "uid": "paymentType", "sortable": true },
+                    { "name": "BRANCH", "uid": "filiale", "sortable": true },
+                    { "name": "VALIDATOR", "uid": "theValidator" },
+                    { "name": "FINANCIAL CHIEF", "uid": "theFinancialChief" },
+                    { "name": "COMMENT", "uid": "comment", "sortable": true },
+                    { "name": "AMOUNT IN WORDS", "uid": "letter_amount", "sortable": true },
+                    { "name": "ACTIONS", "uid": "actions" }
+                ]
+                }
+            },
+            "modal":{
+                "title":"Disbursement Form"
+            }
+        }
+    }
+}

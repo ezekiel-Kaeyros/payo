@@ -1,0 +1,1001 @@
+---------------------API DOC----------------------
+
+
+
+
+*****************************************************************************************************************************************************
+
+------------Endpoint: http://localhost:4000/login,   
+            *** Methods: post,
+                Feat: login
+                input: {
+
+                    "email":"string",
+                    " password": "string"
+                }
+                output: {
+                            user: {
+                                _id: string,
+                                role: Array<any>,
+                                department_id: Array<any>,
+                                email: string,
+                                password: string,
+                                active: boolean,
+                                createdAt: string,
+                                updatedAt: string,
+                                __v: number
+                            },
+                            token: string
+                        }
+                status:200 
+
+
+**************************************************************************************************************************************************
+
+
+------------Endpoint: http://localhost:4000/logout,   (R)
+            *** Methods: post,
+        
+
+**************************************************************************************************************************************************************
+------------Endpoint: http://localhost:4000/roles,   
+            *** Methods: get,
+                Feat: getRoles
+                output: {
+                        role_amount_id: any[];
+                        name: string;
+                        active: boolean;
+                        _id: string;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                status:200 
+
+            
+
+
+
+------------Endpoint: http://localhost:4000/roles/:id,   
+            *** Methods: get,
+                Feat: getRoles by id 
+                output: {
+                        role_amount_id: any[];
+                        name: string;
+                        active: boolean;
+                        _id: string;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                
+                status:200 
+
+
+------------Endpoint: http://localhost:4000/roles/:id,   
+            *** Methods: post,
+                Feat: create role 
+                input: {
+                    "name":"string"
+                    }
+                output: {
+                        role_amount_id: any[];
+                        name: string;
+                        active: boolean;
+                        _id: string;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                
+                status:200     
+
+
+
+------------Endpoint: http://localhost:4000/roles/:id,   
+            *** Methods: put,
+                Feat: update role 
+                input: {
+                    "name":"string"
+                    }
+                output: {
+                        role_amount_id: any[];
+                        name: string;
+                        active: boolean;
+                        _id: string;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                
+                status:200      
+
+
+
+------------Endpoint: http://localhost:4000/roles/:id,   
+            *** Methods: delete,
+                Feat: delete role 
+                output: {
+                        role_amount_id: any[];
+                        name: string;
+                        active: boolean;
+                        _id: string;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                
+                status:200  
+
+************************************************************************************************************************************************
+
+
+
+
+------------Endpoint: http://localhost:4000/rolesamount   
+            *** Methods: get,
+                Feat: get roleamount 
+                input: 
+                output: 
+                    {
+                        amount: number,
+                        _id: string,
+                        createdAt: string,
+                        updatedAt: string,
+                        __v: number
+                    }
+                
+                status:200      
+
+
+    
+------------Endpoint: http://localhost:4000/rolesamount/:id   
+            *** Methods: get,
+                Feat: get roleamount by id
+                input:
+                output: 
+                    {
+                        amount: number,
+                        _id: string,
+                        createdAt: string,
+                        updatedAt: string,
+                        __v: number
+                    }
+                
+                status:200      
+
+
+
+------------Endpoint: http://localhost:4000/rolesamount   
+            *** Methods: post,
+                Feat: create roleamount 
+                input: {
+                    "amount":number
+                    }
+                output: 
+                    {
+                        amount: number,
+                        _id: string,
+                        createdAt: string,
+                        updatedAt: string,
+                        __v: number
+                    }
+                
+                status:200      
+
+
+------------Endpoint: http://localhost:4000/rolesamount/:id   
+            *** Methods: put,
+                Feat: modify roleamount 
+                input: {
+                    "amount": number
+                    }
+                output: 
+                    {
+                        amount: number,
+                        _id: string,
+                        createdAt: string,
+                        updatedAt: string,
+                        __v: number
+                    }
+                
+                status:200      
+
+
+------------Endpoint: http://localhost:4000/rolesamount/:id   
+            *** Methods: delete,
+                Feat: delete roleamount 
+                input: 
+                output: 
+                    {
+                        amount: number,
+                        _id: string,
+                        createdAt: string,
+                        updatedAt: string,
+                        __v: number
+                    }
+                
+                status:200      
+
+
+
+
+************************************************************************************************************************************************
+
+------------Endpoint: http://localhost:4000/users,   
+            *** Methods: Get,
+                Feat: Get users
+                input: 
+                output: {
+                    _id: string,
+                    role: Array<any>,
+                    department_id: Array<any>,
+                    email: string,
+                    active: boolean,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                
+                status:200     
+
+
+
+------------Endpoint: http://localhost:4000/users:id,   
+            *** Methods: Get,
+                Feat: Get users by id 
+                input: 
+                output: {
+                    _id: string,
+                    role: Array<any>,
+                    department_id: Array<any>,
+                    email: string,
+                    active: boolean,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                
+                status:200     
+
+
+------------Endpoint: http://localhost:4000/users,   
+            *** Methods: post,
+                Feat: create users
+                input: {
+                    "email":"string",
+                    "password":"string"
+                }
+                output: {
+                    _id: string,
+                    role: Array<any>,
+                    department_id: Array<any>,
+                    email: string,
+                    active: boolean,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                
+                status:200     
+
+
+------------Endpoint: http://localhost:4000/users/:id,   
+            *** Methods: delete,
+                Feat: delete users
+                input: 
+                output: {
+                    _id: string,
+                    role: Array<any>,
+                    department_id: Array<any>,
+                    email: string,
+                    active: boolean,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                
+                status:200     
+
+
+
+------------Endpoint: http://localhost:4000/offices,   
+            *** Methods: get,
+                Feat: get offices
+                input: 
+                output: 
+                    {
+                    department: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200     
+
+
+
+
+------------Endpoint: http://localhost:4000/offices/:id,   
+            *** Methods: get,
+                Feat: get offices by id
+                input: 
+                output: 
+                    {
+                    department: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/offices/,   
+            *** Methods: post,
+                Feat: create offices
+                input: {
+                    "name": "string"
+                }
+                output: 
+                    {
+                    department: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+------------Endpoint: http://localhost:4000/offices/:id,   
+            *** Methods: put,
+                Feat: modify offices
+                input: {
+                    "name": "string"
+                }
+                output: 
+                    {
+                    department: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/offices/:id,   
+            *** Methods: delete,
+                Feat: delete offices
+                input: 
+                output: 
+                    {
+                    department: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+*****************************************************************************************************************************************************
+
+------------Endpoint: http://localhost:4000/disbursement_type,   
+            *** Methods: get,
+                Feat: get disbursement_type
+                input: 
+                output: 
+                    {
+                    name: string,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+------------Endpoint: http://localhost:4000/disbursement_type:id,   
+            *** Methods: get,
+                Feat: get disbursement_type by id
+                input: 
+                output: 
+                    {
+                    name: string,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement_type,   
+            *** Methods: post,
+                Feat:  create disbursement_type  
+                input: 
+                output: 
+                    {
+                    name: string,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement_type,   
+            *** Methods: put,
+                Feat:  create disbursement_type  
+                input: 
+                    {
+                        "name":"string"
+                    }
+                output: 
+                    {
+                    name: string,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement_type:id,   
+            *** Methods: delete,
+                Feat:  create disbursement_type  
+                input: 
+                output: 
+                    {
+                    name: string,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+
+
+
+------------Endpoint: http://localhost:4000/disbursement,   
+            *** Methods: get,
+                Feat: get disbursement
+                input: 
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement,   
+            *** Methods: get,
+                Feat: get disbursement 
+                input: 
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement/:id,   
+            *** Methods: get,
+                Feat: get disbursement by id 
+                input: 
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement,   
+            *** Methods: post,
+                Feat: create disbursement  
+                input: {"amount":number}
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement,   
+            *** Methods: put,
+                Feat: modify disbursement  
+                input: {"amount":number}
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/disbursement/:id,   
+            *** Methods: delete,
+                Feat: delete disbursement  
+                input: {"amount":number}
+                output: 
+                   {
+                    disbursement_status_id: Array<any>,
+                    beneficiary_id: Array<any>,
+                    initiator: Array<any>,
+                    disbursement_current_status: Array<any>,
+                    amount: number,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    }
+                status:200    
+
+
+
+
+
+
+***********************************************************************************************************************************************
+
+
+------------Endpoint: http://localhost:4000/departments,   
+            *** Methods: get,
+                Feat: get department
+                input: 
+                output:
+                       {
+                    office: Array<any>,
+                    user: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    } 
+                   
+                status:200    
+
+
+------------Endpoint: http://localhost:4000/departments:id,   
+            *** Methods: get,
+                Feat: get departments by id 
+                input: 
+                output:
+                       {
+                    office: Array<any>,
+                    user: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    } 
+                   
+                status:200    
+
+
+------------Endpoint: http://localhost:4000/departments,   
+            *** Methods: post,
+                Feat: create department
+                input: {
+                    "name":"string"
+                }
+                output:
+                       {
+                    office: Array<any>,
+                    user: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    } 
+                   
+                status:200    
+
+
+------------Endpoint: http://localhost:4000/departments:id,   
+            *** Methods: put,
+                Feat: modify department
+                input: {
+                    "name":"string"
+                }
+                output:
+                       {
+                    office: Array<any>,
+                    user: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    } 
+
+
+
+------------Endpoint: http://localhost:4000/departments:id,   
+            *** Methods: delete,
+                Feat: delete department
+                input: 
+                output:
+                       {
+                    office: Array<any>,
+                    user: Array<any>,
+                    name: string,
+                    active: boolean,
+                    _id: string,
+                    createdAt: string,
+                    updatedAt: string,
+                    __v: number
+                    } 
+                   
+                status:200    
+
+
+
+***********************************************************************************************************************************************************
+
+
+------------Endpoint: http://localhost:4000/beneficiary 
+            *** Methods: get,
+                Feat: get beneficiary 
+                input: 
+                output: 
+                    {
+                    disbursement_type_id: any[];
+                    name: string;
+                    active: boolean;
+                    _id: string;
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+                status:200    
+
+
+
+------------Endpoint: http://localhost:4000/beneficiary 
+            *** Methods: get,
+                Feat: get beneficiary by id
+                input: 
+                output: 
+                    {
+                    disbursement_type_id: any[];
+                    name: string;
+                    active: boolean;
+                    _id: string;
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+                status:200  
+
+
+
+
+------------Endpoint: http://localhost:4000/beneficiary 
+            *** Methods: post,
+                Feat: create beneficiary 
+                input: {
+                    "name": "string",
+                    "active": "boolean"
+                }
+                output: 
+                    {
+                    disbursement_type_id: any[];
+                    name: string;
+                    active: boolean;
+                    _id: string;
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+                status:200                      
+
+
+
+
+------------Endpoint: http://localhost:4000/beneficiary:id 
+            *** Methods: put,
+                Feat: modify beneficiary 
+                input: {
+                    "name": "string",
+                    "active": "boolean"
+                }
+                output: 
+                    {
+                    disbursement_type_id: any[];
+                    name: string;
+                    active: boolean;
+                    _id: string;
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+                status:200                      
+
+
+
+------------Endpoint: http://localhost:4000/beneficiary/:id 
+            *** Methods: delete,
+                Feat: delete beneficiary 
+                input:
+                output: 
+                    {
+                    disbursement_type_id: any[];
+                    name: string;
+                    active: boolean;
+                    _id: string;
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+                status:200                      
+
+
+
+*******************************************************************************************************************************************************
+
+
+------------Endpoint: http://localhost:4000/user_role_timestamp
+            *** Methods: get,
+                Feat:   get user_role_timestamp
+                input:
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+
+
+
+------------Endpoint: http://localhost:4000/user_role_timestamp/:id
+            *** Methods: get,
+                Feat:   get user_role_timestamp by id
+                input:
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+
+
+
+
+
+------------Endpoint: http://localhost:4000/user_role_timestamp
+            *** Methods: get,
+                Feat:   get user_role_timestamp
+                input:
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+------------Endpoint: http://localhost:4000/user_role_timestamp
+            *** Methods: post
+                Feat:   create user_role_timestamp
+                input:
+                    {
+                    "user_role":number,
+                    "user_id": number
+                    }
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+
+
+
+------------Endpoint: http://localhost:4000/user_role_timestamp/:id
+            *** Methods: put
+                Feat:   modify user_role_timestamp
+                input:
+                    {
+                    "user_role":number,
+                    "user_id": number
+                    }
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+
+
+
+------------Endpoint: http://localhost:4000/user_role_timestamp/:id
+            *** Methods: delete
+                Feat:   delete user_role_timestamp
+                input:
+                output: {
+                    _id: string;
+                    user_id: [
+                        {
+                        _id: string;
+                        role: string[];
+                        department_id: any[];
+                        email: string;
+                        password: string;
+                        active: boolean;
+                        createdAt: string;
+                        updatedAt: string;
+                        __v: number;
+                        }
+                    ];
+                    user_role: any[];
+                    createdAt: string;
+                    updatedAt: string;
+                    __v: number;
+                    }
+
+                    
+                status:200                      
+
+
